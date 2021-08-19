@@ -29,6 +29,10 @@ persons.push({
     firstName: "Moritz",
     lastName: "Mustermann"
 });
+persons.push({
+    firstName: "Berta",
+    lastName: "Bertelsmann"
+});
 
 // Ausgaben zu Testzwecken in der Console
 // ausgabe(person);
