@@ -13,7 +13,7 @@ const ul1 = document.getElementById("ul1");
 // Die eigentlichen Funktionsaufrufe!
 dispBtn1.addEventListener("click", showList);
 pushNames();
-print(persons);
+printToConsole(persons);
 
 // --------------------------------------------------------------------------------------
 
@@ -56,6 +56,6 @@ function pushNames (){
 
 
 // Simple Ausgabe in die Konsole.
-function ausgabe (outputStr) {
+function printToConsole(outputStr) {
     console.log(outputStr);
 }
