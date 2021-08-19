@@ -18,4 +18,6 @@ Niemand hat direkte Schreibberechtigung auf dem Main Branch, es muss zwingend ei
 ## Koordination
 
 Die genaue Art der Koordination der Arbeit am Projekt wird sich im Laufe des Projekts ergeben und dann hier dokumentiert.
+Möglichkeiten zur Koordination wären z.B. das Modul [Discussions](https://github.com/ComcaveTeamwork/CTP_01_TableReader/discussions) oder das [Wiki](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki)
+
 
