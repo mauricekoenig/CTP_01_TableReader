@@ -12,6 +12,6 @@ jobs:
     - name: label swapping
       uses: jinmayamashita/ready-for-review@1.0.0
       with:
-        in-progress-label: 'draftPR'
-        ready-for-review-label: 'inBearbeitung'
+        in-progress-label: '**draft PR**'
+        ready-for-review-label: '**in Bearbeitung**'
         repo-token: ${{ secrets.GITHUB_TOKEN }}
