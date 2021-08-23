@@ -10,7 +10,7 @@ Als Beispielprojekt soll die Entwicklung einer HTML Seite dienen, auf der mittel
 
 ## Workflow
 
-Der Workflow wird im Deteil im [Wiki](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki/Workflow) beschrieben.
+Der Workflow wird im Detail im [Wiki](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki/Workflow) beschrieben.
 
 
 ## Koordination
