@@ -10,14 +10,15 @@ Als Beispielprojekt soll die Entwicklung einer HTML Seite dienen, auf der mittel
 
 ## Workflow
 
-Der Workflow wird im Detail im [Wiki](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki/Workflow) beschrieben.
+Der Workflow wird im Detail im [##Wiki##](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki/Workflow) beschrieben.
 
 
 ## Koordination
 
 Die genaue Art der Koordination der Arbeit am Projekt wird sich im Laufe des Projekts ergeben und dann hier dokumentiert.
-Möglichkeiten zur Koordination wären z.B. das Modul 
-- [Discussions](https://github.com/ComcaveTeamwork/CTP_01_TableReader/discussions) oder das 
+Folgende Möglichkeiten wären zur Koordination u.a. denkbar:
+- [Discussions](https://github.com/ComcaveTeamwork/CTP_01_TableReader/discussions)
 - [Wiki](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki)
+- [Vorschläge für Arbeitspakete](https://github.com/ComcaveTeamwork/CTP_01_TableReader/issues/new?assignees=&labels=%2B%2BVorschlag%2B%2B&template=vorschlag-arbeitspaket.md&title=%5BVorschlag%5D)
 
 
