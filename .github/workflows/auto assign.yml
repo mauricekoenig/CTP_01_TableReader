@@ -24,6 +24,7 @@ jobs:
       if: github.event == 'issues' 
       with:
         project: 'https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/2'
+        column_name: 'ToDo'
 
 
     - name: Assign NEW pull requests to project https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/3
