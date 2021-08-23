@@ -7,16 +7,23 @@ assignees: ''
 
 ---
 
-Dieses template ist vom Standard feature request übernommen, to be changed later...
+<!-- Label mit Schwierigkeitsgrad hinzufügen wenn bekannt -->
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Problembeschreibung / Ist Zustand**
+<!-- Was ist der aktuelle Zustand / das aktuelle Verhalten / das Problem -->
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Soll Zustand**
+<!-- Wie ist das gewünschte Verhalten? -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Arbeitsschritte**
+<!-- vorgeschlagene Arbeitsschritte -->
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Betroffene Dateien**
+<!-- Zu Ändernde Dateien benennen - wenn bekannt -->
+
+**Abhängigkeiten**
+<!--
+Abhängigkeiten von anderen issues angeben. Syntax:
+depends on [Hashtag + (issue oder pull request ) Number]
+Bsp.: depends on #12
+-->

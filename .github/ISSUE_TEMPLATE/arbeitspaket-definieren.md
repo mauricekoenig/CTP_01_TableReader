@@ -7,15 +7,21 @@ assignees: ''
 
 ---
 
+<!--
+ Label mit Schwierigkeitsgrad hinzufügen nicht vergessen
+-->
 **Betroffene Dateien**
-Zu Ändernde Dateien benennen.
+<!-- Zu Ändernde Dateien benennen. -->
 
-**Beschreibung der gewünschten Funktionalität**
-Text
+**Beschreibung des Arbeitspakets**
+<!-- Welche Arbeiten sollen durchgeführt werden? -->
 
 **Zusatzinformationen**
-Text
+<!-- weitere Infos wenn sinnvoll -->
 
 **Abhängigkeiten**
+<!--
 Abhängigkeiten von anderen issues angeben. Syntax:
-depends on [Hashtag + Number]
+depends on [Hashtag + (issue oder pull request ) Number]
+Bsp.: depends on #12
+-->
