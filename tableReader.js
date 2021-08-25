@@ -20,6 +20,7 @@ printToConsole(persons);
 
 // Implementierungen der einzelnen Funktionen.
 
+
 // showList: Namen aus dem "persons"-Array der oben deklariert wurde, werden als Listenelemente einem anderen Listenelement untergeordnet und deren Text wird gleichgesetzt
 // mit dem Namen der Person an Index i.
 function showList() {
@@ -52,6 +53,12 @@ function pushNames (){
         firstName: "Berta",
         lastName: "Bertelsmann"
     });
+  
+  persons.push({
+    firstName: "Julius",
+    lastName: "Cäsar"
+});
+  
 }
 
 
