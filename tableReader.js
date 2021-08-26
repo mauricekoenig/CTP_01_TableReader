@@ -1,66 +1,68 @@
+
+// tableReader.js - Letze Änderung: Maurice König
+
 "use strict";
 
-/********  Variablen **********/
-
-// ein Objekt "person" wird angelegt
-const person = {
-    firstName: "Anton",
-    lastName: "Mustermann"
-}
-// Variable persons wird als Array angelegt
+// Variablen, die zwischengespeichert werden um hier im Script damit arbeiten zu können.
 let persons = [];
-
-
 const dispBtn1 = document.getElementById("dispBtn1");
+const ul1 = document.getElementById("ul1"); 
 
+// --------------------------------------------------------------------------------------
 
-/******** Event Listener **********/
-
+// Die eigentlichen Funktionsaufrufe!
 dispBtn1.addEventListener("click", showList);
+pushNames();
+printToConsole(persons);
 
-/******** business logic **********/
+// --------------------------------------------------------------------------------------
 
 
-// Das Objekt "person" wird in das Array "persons" gepusht
-persons.push(person);
+// Implementierungen der einzelnen Funktionen.
 
-// Dem Array persons wird ein weiteres Objekt hinzugefügt, das zuvor nicht extra deklariert wurde
-persons.push({
-    firstName: "Moritz",
-    lastName: "Mustermann"
-});
-persons.push({
-    firstName: "Berta",
-    lastName: "Bertelsmann"
-});
-persons.push({
+
+// showList: Namen aus dem "persons"-Array der oben deklariert wurde, werden als Listenelemente einem anderen Listenelement untergeordnet und deren Text wird gleichgesetzt
+// mit dem Namen der Person an Index i.
+function showList() {
+
+    for (let i = 0; i < persons.length; i++){
+
+        let newListElement = document.createElement("li");
+        newListElement.innerText = persons[i].firstName + " " + persons[i].lastName;
+        ul1.appendChild(newListElement);
+    }
+}
+
+// pushNames: Es werden Objekte mit zwei internen Variablen "firstName" und "lastName" erstellt. Die Wertzuweisungen erfolgen ebenfalls auf direktem Wege. Danach werden die
+// Objekte in das Array "persons" gepusht.
+function pushNames (){
+
+    const person = {
+        firstName: "Anton",
+        lastName: "Mustermann"
+    }
+    
+    persons.push(person);
+    
+    persons.push({
+        firstName: "Moritz",
+        lastName: "Mustermann"
+    });
+    
+    persons.push({
+        firstName: "Berta",
+        lastName: "Bertelsmann"
+    });
+  
+  persons.push({
     firstName: "Julius",
     lastName: "Cäsar"
 });
-
-// Ausgaben zu Testzwecken in der Console
-// ausgabe(person);
-// ausgabe(person.firstName);
-ausgabe(persons);
-// ausgabe(persons[0].firstName);
-// ausgabe(persons[0].lastName);
-
-
-/************** Änderungen an HTML / Viewschicht *****************/
-
-
-// Zeigt das erste Element des Arrays "persons" in einer Liste im HTML Dokument an
-function showList() {
-    let newLi = document.createElement("li");
-    newLi.innerText = persons[0].firstName + " " + persons[0].lastName;
-    document.getElementById("ul1").appendChild(newLi);
+  
 }
 
 
-
-
-
-/* Tools */
-function ausgabe(outputStr) {
+// Simple Ausgabe in die Konsole.
+function printToConsole(outputStr) {
     console.log(outputStr);
 }
