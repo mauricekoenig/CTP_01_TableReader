@@ -24,6 +24,7 @@ assignees: ''
 **Abhängigkeiten**
 <!--
 Abhängigkeiten von anderen issues angeben. Syntax:
-depends on [Hashtag + (issue oder pull request ) Number]
-Bsp.: depends on #12
--->
+depends on [#+ (issue oder pull request ) Number]-->
+
+### Wichtig
+Bitte den im Wiki beschriebenen [Workflow](https://github.com/ComcaveTeamwork/CTP_01_TableReader/wiki/Workflow) einhalten

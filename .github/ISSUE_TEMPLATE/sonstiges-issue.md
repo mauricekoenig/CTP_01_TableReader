@@ -1,8 +1,8 @@
 ---
-name: Arbeitspaket definieren
-about: Ein Arbeitspaket definieren
-title: "[Arbeitspaket]"
-labels: ''
+name: Sonstiges Issue
+about: Alle issues die nicht in andere Kategorien fallen
+title: "[Sonstiges]"
+labels: "++Sonstiges++"
 assignees: ''
 
 ---
