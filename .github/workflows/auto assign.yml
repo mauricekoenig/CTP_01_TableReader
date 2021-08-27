@@ -18,6 +18,14 @@ jobs:
       if: github.event.action == 'opened'
       with:
         project: 'https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/1'
+    
+    
+    - name: Assign NEW pull requests to project https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/3
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event_name == 'pull_request' 
+      with:
+        project: 'https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/3'
+    
         
     - name: Assign NEW issues to project https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/2
       uses: srggrs/assign-one-project-github-action@1.2.1
@@ -27,12 +35,6 @@ jobs:
         column_name: 'ToDo'
 
 
-    - name: Assign NEW pull requests to project https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/3
-      uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event_name == 'pull_request' 
-      with:
-        project: 'https://github.com/ComcaveTeamwork/CTP_01_TableReader/projects/3'
-        column_name: 'Dependent - Warteschlange'
         
 
   
