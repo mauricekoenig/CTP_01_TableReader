@@ -6,7 +6,8 @@
 // Variablen, die zwischengespeichert werden um hier im Script damit arbeiten zu können.
 let persons = [];
 const dispBtn1 = document.getElementById("dispBtn1");
-const ul1 = document.getElementById("ul1"); 
+const ul1 = document.getElementById("ul1");
+let local = false;
 
 // --------------------------------------------------------------------------------------
 
@@ -68,17 +69,19 @@ function printToConsole(outputStr) {
     console.log(outputStr);
 }
 
-// readDataFromList: Über die Fetch-Methode kann man einen HTTP-Request stellen.
-// Im Grunde möchte diese Funktion also nur mit der Datei "Liste.md" kommunizieren,
-// die sich ebenfalls in unserem lokalen Verzeichnis, beziehungsweise auf
-// unserem lokalen Server befindet. Dann wird der Body des Responses in eine
-// Text-Repräsentation umgewandelt und in die Konsole ausgegeben.
-// Der "path"-Parameter kann einen beliebigen Pfad wie z.B "AndereListe.md" entgegen
-// nehmen, was das gleiche Resultat hervorbringen würde, sofern die Datei gegeben ist.
+function readDataFromList(path)
+{
+    var request = new XMLHttpRequest();
+    request.open("GET", "Liste.md");
 
-function readDataFromList (path){
+    request.addEventListener("load", function (event){
 
-    var data = fetch(path).
-    then(data => data.text()).
-    then(data => console.log(data));
+        if (request.status >= 200 & request.status < 300)
+        console.log(request.responseText);
+
+        else console.warn(request.statusText, request.responseText);
+        
+    });
+
+    request.send();
 }
