@@ -66,6 +66,7 @@ function printToConsole(outputStr) {
     console.log(outputStr);
 }
 
+// siehe PR-Beschreibung
 function readDataFromFile (path)
 {
     var request = new XMLHttpRequest();
