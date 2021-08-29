@@ -2,9 +2,11 @@
 "use strict";
 
 // Variablen, die zwischengespeichert werden um hier im Script damit arbeiten zu können.
+
 let persons = [];
 const dispBtn1 = document.getElementById("dispBtn1");
 const ul1 = document.getElementById("ul1");
+let seperatedLines = [];
 
 // --------------------------------------------------------------------------------------
 
@@ -30,6 +32,8 @@ function showList() {
         newListElement.innerText = persons[i].firstName + " " + persons[i].lastName;
         ul1.appendChild(newListElement);
     }
+
+    document.getElementById('dispBtn1').disabled = true;
 }
 
 // pushNames: Es werden Objekte mit zwei internen Variablen "firstName" und "lastName" erstellt. Die Wertzuweisungen erfolgen ebenfalls auf direktem Wege. Danach werden die
@@ -66,7 +70,6 @@ function printToConsole(outputStr) {
     console.log(outputStr);
 }
 
-// siehe PR-Beschreibung
 function readDataFromFile (path)
 {
     var request = new XMLHttpRequest();
@@ -74,14 +77,31 @@ function readDataFromFile (path)
 
     request.addEventListener("load", function (event){
 
-        if (request.status >= 200 & request.status < 300)
-        console.log(request.responseText);
+        if (request.status >= 200 & request.status < 300){
+            
+            getSeperatedLines(request.responseText);
+        }
 
         else console.warn(request.statusText, request.responseText);
 
     });
 
     request.send();
+}
+
+// getSeperatedLines: der Funktion wird ein String übergeben. Daraufhin wird der String nach einem Suchmuster in individuelle Zeilen zerlegt und zu einem
+// Array zusammengefasst. Die einzelnen Elemente des neuen Arrays werden dann in ein anderes Array (seperatedLines) gepusht.
+
+function getSeperatedLines (text) {
+
+    var textSeperatedByNewLineCharacters = text.split('\n')
+    
+    for (var i = 0; i < textSeperatedByNewLineCharacters.length; i++){
+
+        seperatedLines.push(textSeperatedByNewLineCharacters[i]);
+        console.log("Zeile " + (i+1) + " ~> " + seperatedLines[i]);
+    }
+
 }
 
 
