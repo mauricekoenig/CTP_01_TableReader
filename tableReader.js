@@ -79,6 +79,7 @@ function readDataFromFile (path)
 
         if (request.status >= 200 & request.status < 300){
             
+            console.log(request.responseText);
             getSeperatedLines(request.responseText);
         }
 
